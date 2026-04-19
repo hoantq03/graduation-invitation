@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thư Mời Lễ Tốt Nghiệp 🎓</title>
+    <!-- Prevent HTML Caching -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+
+    <!-- Modern Font: Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <!-- Version appended to force CSS reload -->
+    <link rel="stylesheet" href="style.css?v=1">
+    
+    <!-- Boxicons for elegant icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!-- Preloader & Open Button -->
+    <div id="preloader">
+        <div class="loader-content">
+            <i class='bx bxs-graduation bx-tada' style='font-size: 5rem; color: #FFE66D;'></i>
+            <h2 style='color: white; margin-top: 20px; font-weight: 300;'>Thư Mời Lễ Tốt Nghiệp</h2>
+            <button id="open-btn" class="open-btn">Mở Thiệp</button>
+        </div>
+    </div>
+
+    <!-- Background Music -->
+    <audio id="bg-music" src="./audio4.mp3" loop autoplay preload="auto"></audio>
+    <div id="music-toggle" class="music-toggle">
+        <i class='bx bx-music'></i>
+    </div>
+    
+
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <!-- Overlay for better text readability -->
+        <div class="hero-overlay"></div>
+        
+        <div class="hero-content reveal">
+            <div class="badge">Thân mời bạn! 🎉</div>
+            <h1 class="main-title">Lễ Tốt Nghiệp</h1>
+            <p class="subtitle">Đến chung vui và lưu giữ những khoảnh khắc đẹp cùng mình nhé.</p>
+            
+            <!-- Countdown Timer -->
+            <div class="countdown-container">
+                <div class="countdown-item">
+                    <span id="days">00</span>
+                    <p>Ngày</p>
+                </div>
+                <div class="countdown-item">
+                    <span id="hours">00</span>
+                    <p>Giờ</p>
+                </div>
+                <div class="countdown-item">
+                    <span id="minutes">00</span>
+                    <p>Phút</p>
+                </div>
+                <div class="countdown-item">
+                    <span id="seconds">00</span>
+                    <p>Giây</p>
+                </div>
+            </div>
+            
+            <a href="#details" class="scroll-down">
+                Xem chi tiết <i class='bx bx-chevron-down bx-fade-down'></i>
+            </a>
+        </div>
+    </header>
+
+    <!-- Details Section -->
+    <section class="section details-section" id="details">
+        <div class="container">
+            <h2 class="section-title reveal">Thông Tin Sự Kiện</h2>
+            
+            <div class="cards-wrapper">
+                <!-- Time Card -->
+                <div class="glass-card time-card reveal" data-tilt data-tilt-max="5" data-tilt-glare data-tilt-max-glare="0.2">
+                    <div class="icon-wrapper"><i class='bx bx-calendar-event'></i></div>
+                    <h3>Thời Gian</h3>
+                    <p class="highlight-text">Ngày 23/04/2026</p>
+                    <ul class="timeline">
+                        <li>
+                            <span class="time">13:30 - 15:30</span>
+                            <span class="desc">Làm lễ</span>
+                        </li>
+                        <li>
+                            <span class="time">15:30 - 17:00</span>
+                            <span class="desc">Chụp ảnh kỷ niệm cùng mọi người</span>
+                        </li>
+                    </ul>
+                    <div class="note-box">
+                        <p><i class='bx bx-bulb'></i> <strong>Lưu ý nhỏ:</strong> Mọi người có thể đến sau giờ làm lễ (15h30) để đỡ phải chờ
+                            đợi! ❤️</p>
+                        <p style="margin-top: 10px;"><i class='bx bx-heart'></i>Hôm đó đông người nên chắc sẽ hơi lộn xộn một tí, nếu mình có
+                            tất bật quá mà chưa tiếp đón kịp thời thì mọi người thông cảm cho mình nhé</p>
+                    </div>
+                </div>
+
+                <!-- Location Card -->
+                <div class="glass-card location-card reveal" data-tilt data-tilt-max="5" data-tilt-glare data-tilt-max-glare="0.2">
+                    <div class="icon-wrapper"><i class='bx bx-map'></i></div>
+                    <h3>Địa Điểm</h3>
+                    <p class="highlight-text">Đại học Công Thương TPHCM (HUIT)</p>
+                    <p class="address">140 Lê Trọng Tấn, P. Tây Thạnh, Q. Tân Phú, TP.HCM</p>
+                    
+                    <!-- Live Map -->
+                    <div class="map-container">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.0664658390753!2d106.62629737570381!3d10.806240258641951!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752be27d8b4f4d%3A0x92dcba2950430867!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBDw7RuZyBUaMawxqFuZyBUUC4gSOG7kyBDaMOtIE1pbmg!5e0!3m2!1svi!2s!4v1700000000000!5m2!1svi!2s" 
+                            width="100%" 
+                            height="200" 
+                            style="border:0; border-radius: 12px;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                    
+                    <a href="https://www.google.com/maps?q=Đại+học+Công+Thương+TPHCM,+140+Lê+Trọng+Tấn,+Tây+Thạnh,+Tân+Phú,+TP.HCM" target="_blank" class="primary-btn">
+                        <i class='bx bx-navigation'></i> Chỉ đường trên Google Maps
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Hẹn gặp mọi người ở buổi lễ nhé! 🎓✨</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+    <!-- Version appended to force JS reload -->
+    <script src="script.js?v=20260419"></script>
+</body>
+</html>
